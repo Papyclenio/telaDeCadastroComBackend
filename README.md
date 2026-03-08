@@ -1,2 +1,2 @@
 # telaDeCadastroComBackend
-É uma tela para testar rotas http
+É uma tela de cadastro para testar rotas http.
