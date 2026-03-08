@@ -1,0 +1,97 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "nome": "Makumbani Eduardo Pedro",
+      "emael": "makumbanieduardopedro@gmael.com",
+      "passWord": "12345678",
+      "dataCriacaoi": "2026-03-07T16:08:14.297Z"
+    },
+    {
+      "nome": "teste",
+      "emael": "kandaeduardopedro395@gmail.com",
+      "dataCriacaoi": "2026-03-07T21:23:39.354Z"
+    },
+    {
+      "id": 3,
+      "nome": "Ruth Paulina Pedro",
+      "emael": "ruthpaulinapedro@gmael.com",
+      "passWord": "12w34redr",
+      "dataCriacaoi": "2026-03-07T21:35:54.778Z"
+    },
+    {
+      "nome": "Pemba Kigingo",
+      "emael": "pembakigingo@gmail.com",
+      "dataCriacaoi": "2026-03-07T21:37:56.408Z"
+    },
+    {
+      "id": 4,
+      "nome": "fulano pedro",
+      "emael": "fulano@gmael.com",
+      "passWord": "12w34redr",
+      "dataCriacaoi": "2026-03-07T21:39:47.079Z"
+    },
+    {
+      "nome": "Angola Pedro Fulano",
+      "emael": "qngola@gmail.com",
+      "dataCriacaoi": "2026-03-07T21:41:04.274Z"
+    },
+    {
+      "id": 5,
+      "nome": "mimgo",
+      "email": "fulano@gmael.com",
+      "passWord": "rrrrrrr34redr",
+      "dataCriacaoi": "2026-03-07T21:43:32.173Z"
+    },
+    {
+      "nome": "Luanda Pedro Eduardo",
+      "email": "luandapedroeduardo@gmail.com",
+      "dataCriacaoi": "2026-03-07T21:44:56.285Z"
+    },
+    {
+      "nome": "teste 12",
+      "email": "teste@gmail.com",
+      "dataCriacaoi": "2026-03-07T21:47:32.249Z"
+    },
+    {
+      "nome": "teste13",
+      "email": "teste@gmail.com",
+      "dataCriacaoi": "2026-03-07T21:48:19.661Z"
+    },
+    {
+      "nome": "",
+      "email": "",
+      "dataCriacaoi": "2026-03-07T21:52:43.819Z"
+    },
+    {
+      "nome": "Pemba Kigingo",
+      "email": "kandaeduardopedro395@gmail.com",
+      "dataCriacaoi": "2026-03-07T21:59:16.938Z"
+    },
+    {
+      "nome": "Makumbani Eduardo Pedro",
+      "dataCriacaoi": "2026-03-08T12:34:44.707Z"
+    },
+    {
+      "nome": "teste 12.0.2",
+      "email": "teste@gmail.com",
+      "dataCriacaoi": "2026-03-08T12:36:09.969Z"
+    },
+    {
+      "nome": "teste 12.0.3",
+      "email": "teste@gmail.com",
+      "dataCriacaoi": "2026-03-08T12:38:27.309Z"
+    },
+    {
+      "nome": "teste 12.0.4",
+      "email": "teste@gmail.com",
+      "dataCriacaoi": "2026-03-08T12:40:24.764Z"
+    },
+    {
+      "id": 356,
+      "nome": "teste 12.0.5",
+      "email": "teste@gmail.com",
+      "dataCriacaoi": "2026-03-08T12:42:51.325Z"
+    }
+  ]
+}

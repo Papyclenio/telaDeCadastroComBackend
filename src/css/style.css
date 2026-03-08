@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Encode_Sans";
+  src: url(../font/Encode_Sans/EncodeSans-VariableFont_wdth\,wght.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Encode_Sans";
+}
+
+.content {
+  margin-top: 40px;
+  width: 350px;
+  height: 400px;
+  border: 2px solid rgba(0, 0, 0, 0.137);
+  border-radius: 15px;
+  box-shadow: 10px 1px 50px rgba(0, 0, 0, 0.089);
+}
+
+form {
+  margin: 5%;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content_input {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 25px;
+}
+.display {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 11pt;
+  margin-bottom: 4px;
+}
+input {
+  outline: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-color: blue;
+  background: transparent;
+}
+
+.button_content {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  font-size: 15pt;
+  font-weight: bold;
+  outline: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(0, 0, 255, 0.801);
+}
+
+button:hover {
+  transform: translate(2px, 2px);
+  background-color: rgb(0, 0, 255);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
