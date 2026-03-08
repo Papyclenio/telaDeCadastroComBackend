@@ -1,4 +1,5 @@
 import express from "express";
+import bcrypt from "bcryptjs";
 import cors from "cors";
 import fs from "fs";
 
@@ -8,6 +9,15 @@ const path = "./src/banco/dado.json";
 
 app.use(express.json());
 app.use(cors())
+
+async function criptSenha(passWord) {
+    const hast = await bcrypt.hash(passWord, 10);
+    console.log(passWord)
+    console.log(hast);
+    return hast
+}
+
+
 
 app.get("/", (req, res) => {
   fs.readFile(path, "utf-8", (err, dado) => {
@@ -22,20 +32,20 @@ app.get("/", (req, res) => {
 });
 
 app.post("/cadastro", (req, res) => {
-  fs.readFile(path, "utf-8", (erro, dado) => {
+  fs.readFile(path, "utf-8", async (erro, dado) => {
     try {
       const { id, nome, email, passWord } = req.body;
-      let useri = {
-        id: id,
-        nome: nome,
-        email: email,
-        passWord: passWord,
-        dataCriacaoi: new Date(),
-      };
-      let daddoConv = JSON.parse(dado);
-      daddoConv.user.push(useri);
-      let dadoConvJSON = JSON.stringify(daddoConv, null, 2);
-
+        const sehaHash = await criptSenha(passWord);
+        let useri = {
+          id: id,
+          nome: nome,
+          email: email,
+          passWord: sehaHash,
+          dataCriacaoi: new Date(),
+        };
+        let daddoConv = JSON.parse(dado);
+        daddoConv.user.push(useri);
+        let dadoConvJSON = JSON.stringify(daddoConv, null, 2);
       fs.writeFile(path, dadoConvJSON, "utf-8", (erru) => {
         try {
           res.status(201).send("Usuario criado com sucesso!");
