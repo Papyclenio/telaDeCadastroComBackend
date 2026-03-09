@@ -12,12 +12,8 @@ app.use(cors())
 
 async function criptSenha(passWord) {
     const hast = await bcrypt.hash(passWord, 10);
-    console.log(passWord)
-    console.log(hast);
     return hast
 }
-
-
 
 app.get("/", (req, res) => {
   fs.readFile(path, "utf-8", (err, dado) => {
@@ -34,10 +30,10 @@ app.get("/", (req, res) => {
 app.post("/cadastro", (req, res) => {
   fs.readFile(path, "utf-8", async (erro, dado) => {
     try {
-      const { id, nome, email, passWord } = req.body;
+      const {nome, email, passWord } = req.body;
+      
         const sehaHash = await criptSenha(passWord);
         let useri = {
-          id: id,
           nome: nome,
           email: email,
           passWord: sehaHash,

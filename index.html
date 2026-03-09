@@ -13,7 +13,12 @@
         <div class="content_input">
           <div class="display">
             <label for="input_nome">Nome completo</label>
-            <input type="text" id="input_nome" placeholder="Nome completo" />
+            <input
+              type="text"
+              id="input_nome"
+              placeholder="Nome completo"
+              required
+            />
           </div>
           <div class="display">
             <label for="input_email">E-mail</label>
@@ -22,6 +27,7 @@
               id="input_email"
               placeholder="E-mail"
               autocomplete="email"
+              required
             />
           </div>
           <div class="display">
@@ -30,7 +36,7 @@
               type="password"
               id="input_password"
               placeholder="Password"
-              autocomplete="new-password"
+              required
             />
           </div>
         </div>
@@ -38,6 +44,7 @@
           <button>Cadastrar</button>
         </div>
       </form>
+      <pre id="user"></pre>
     </div>
     <script src="src/js/scriprt.js"></script>
   </body>
