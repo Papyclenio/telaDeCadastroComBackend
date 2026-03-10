@@ -15,7 +15,7 @@ async function criptSenha(passWord) {
     return hast
 }
 
-app.get("/", (req, res) => {
+app.get("/cadastro", (req, res) => {
   fs.readFile(path, "utf-8", (err, dado) => {
     try {
       const dadoConv = JSON.parse(dado);
@@ -44,13 +44,15 @@ app.post("/cadastro", (req, res) => {
         let dadoConvJSON = JSON.stringify(daddoConv, null, 2);
       fs.writeFile(path, dadoConvJSON, "utf-8", (erru) => {
         try {
-          res.status(201).send("Usuario criado com sucesso!");
+          console.log("Usuario cadastrado");
+          
         } catch (error) {
           console.log(error);
 
           res.status(500).send("erro ao criar o usuario!");
         }
       });
+      res.status(201).json(dadoConvJSON);
     } catch (error) {
       console.log(erro);
     }

@@ -51,6 +51,24 @@
       "email": "teste_8@gmail.com",
       "passWord": "$2b$10$U7FtK83dWD2sfbvmIapaC.Ir8SyBkNlwrIeOAs6etRPxPonGlCI2.",
       "dataCriacaoi": "2026-03-09T01:13:59.289Z"
+    },
+    {
+      "nome": "teste_9",
+      "email": "teste_9@gmail.com",
+      "passWord": "$2b$10$jTLUSvFVtK2I3TqCLVX54.EBOlO6KYBfOCOHdxHhDwJhtcGSuejD.",
+      "dataCriacaoi": "2026-03-10T22:23:37.342Z"
+    },
+    {
+      "nome": "teste_10",
+      "email": "teste_10@gmail.com",
+      "passWord": "$2b$10$gmAr448Bv1f2pbpQlaU1zuRPg0Lv1vy9k2pR2fpG0jppbzugiOT9u",
+      "dataCriacaoi": "2026-03-10T22:29:35.453Z"
+    },
+    {
+      "nome": "kanda Eduardo Pedro",
+      "email": "kandaEduardoPedro@gmail.com",
+      "passWord": "$2b$10$FktQcg8L6.FB5Klmf3Y35OOmZjsB9b/YWjhlFsGxPKJNJDPAJL2WO",
+      "dataCriacaoi": "2026-03-10T23:56:08.317Z"
     }
   ]
 }

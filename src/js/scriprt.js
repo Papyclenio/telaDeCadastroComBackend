@@ -11,8 +11,6 @@ async function cadastrar(nome, email, passWord) {
     }),
   };
 
-  console.log("enviando:", init);
-
   try {
     const res = await fetch("http://localhost:8000/cadastro", init);
     if (!res.ok) throw new Error(res.statusText);
@@ -28,12 +26,14 @@ button.addEventListener("click", async () => {
   const nome = document.getElementById("input_nome").value;
   const email = document.getElementById("input_email").value;
   const passWord = document.getElementById("input_password").value;
-  console.log(nome, email, passWord);
+
+  
 
   try {
     const resultado = await cadastrar(nome, email, passWord);
     window.alert("Cadastrado com sucesso!");
     console.log(resultado);
+   
   } catch (e) {
     window.alert("Falha no cadastro, veja o console.");
   }
