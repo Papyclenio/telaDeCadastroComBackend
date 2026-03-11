@@ -17,9 +17,7 @@ async function buscarUsuarioLogado() {
     div.classList.add("formatarDiv");
     div.appendChild(p);
     div.appendChild(p2);
-    
     usuarioLogado.appendChild(div);
-    console.log(p);
   }
 }
 

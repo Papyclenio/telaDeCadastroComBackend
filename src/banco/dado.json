@@ -65,10 +65,16 @@
       "dataCriacaoi": "2026-03-10T22:29:35.453Z"
     },
     {
+      "nome": "Makumbani Eduardo Pedro",
+      "email": "kandaeduardopedro395@gmail.com",
+      "passWord": "$2b$10$HCvKGztVgc2eaZD7j/Cyq.NqnSXAKeOya/sn6pohlUas.7VazUiEO",
+      "dataCriacaoi": "2026-03-11T00:35:17.636Z"
+    },
+    {
       "nome": "kanda Eduardo Pedro",
-      "email": "kandaEduardoPedro@gmail.com",
-      "passWord": "$2b$10$FktQcg8L6.FB5Klmf3Y35OOmZjsB9b/YWjhlFsGxPKJNJDPAJL2WO",
-      "dataCriacaoi": "2026-03-10T23:56:08.317Z"
+      "email": "teste@gmail.com",
+      "passWord": "$2b$10$wBvmsoMnisvixRViJAZ7Ge6uessNW./MzReHwDIQo2dA1T/vW4lSe",
+      "dataCriacaoi": "2026-03-11T00:35:25.332Z"
     }
   ]
 }

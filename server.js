@@ -8,11 +8,11 @@ const porta = 8000;
 const path = "./src/banco/dado.json";
 
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 async function criptSenha(passWord) {
-    const hast = await bcrypt.hash(passWord, 10);
-    return hast
+  const hast = await bcrypt.hash(passWord, 10);
+  return hast;
 }
 
 app.get("/cadastro", (req, res) => {
@@ -30,22 +30,21 @@ app.get("/cadastro", (req, res) => {
 app.post("/cadastro", (req, res) => {
   fs.readFile(path, "utf-8", async (erro, dado) => {
     try {
-      const {nome, email, passWord } = req.body;
-      
-        const sehaHash = await criptSenha(passWord);
-        let useri = {
-          nome: nome,
-          email: email,
-          passWord: sehaHash,
-          dataCriacaoi: new Date(),
-        };
-        let daddoConv = JSON.parse(dado);
-        daddoConv.user.push(useri);
-        let dadoConvJSON = JSON.stringify(daddoConv, null, 2);
+      const { nome, email, passWord } = req.body;
+
+      const sehaHash = await criptSenha(passWord);
+      let useri = {
+        nome: nome,
+        email: email,
+        passWord: sehaHash,
+        dataCriacaoi: new Date(),
+      };
+      let daddoConv = JSON.parse(dado);
+      daddoConv.user.push(useri);
+      let dadoConvJSON = JSON.stringify(daddoConv, null, 2);
       fs.writeFile(path, dadoConvJSON, "utf-8", (erru) => {
         try {
           console.log("Usuario cadastrado");
-          
         } catch (error) {
           console.log(error);
 

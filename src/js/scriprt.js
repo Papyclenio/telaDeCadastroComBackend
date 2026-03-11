@@ -27,13 +27,10 @@ button.addEventListener("click", async () => {
   const email = document.getElementById("input_email").value;
   const passWord = document.getElementById("input_password").value;
 
-  
-
   try {
     const resultado = await cadastrar(nome, email, passWord);
     window.alert("Cadastrado com sucesso!");
     console.log(resultado);
-   
   } catch (e) {
     window.alert("Falha no cadastro, veja o console.");
   }
